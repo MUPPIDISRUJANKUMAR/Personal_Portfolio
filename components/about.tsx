@@ -42,7 +42,7 @@ export function About() {
               <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-2xl blur-2xl group-hover:opacity-100 transition duration-700 opacity-50" />
               <div className="relative rounded-2xl overflow-hidden border border-border/50 aspect-square w-full">
                 <Image
-                  src={`/srujan_photo.jpg?height=400&width=400&query=professional developer portrait`}
+                  src="/srujan_photo.jpg"
                   alt={personalData.name}
                   width={400}
                   height={400}
