@@ -32,37 +32,37 @@ export const education = [
 
 export const skills = [
   // Languages
-  { name: "Python", icon: "" },
-  { name: "C", icon: "" },
-  { name: "C++", icon: "" },
-  { name: "Java", icon: "" },
-  { name: "JavaScript", icon: "" },
-  { name: "TypeScript", icon: "" },
-  { name: "HTML5", icon: "" },
-  { name: "CSS3", icon: "" },
+  { name: "Python" },
+  { name: "C" },
+  { name: "C++" },
+  { name: "Java" },
+  { name: "JavaScript" },
+  { name: "TypeScript" },
+  { name: "HTML5" },
+  { name: "CSS3" },
 
   // Frameworks & Libraries
-  { name: "React", icon: "" },
-  { name: "Next.js", icon: "" },
-  { name: "Node.js", icon: "" },
-  { name: "Tailwind", icon: "" },
-  { name: "Bootstrap", icon: "" },
+  { name: "React" },
+  { name: "Next" },
+  { name: "Node.js" },
+  { name: "Tailwind" },
+  { name: "Bootstrap" },
 
   // Databases
-  { name: "MySQL", icon: "" },
-  { name: "Firebase", icon: "" },
+  { name: "MySQL" },
+  { name: "Firebase" },
 
   // CS Fundamentals
-  { name: "DSA", icon: "" },
-  { name: "OOP", icon: "" },
+  { name: "DSA" },
+  { name: "OOP" },
 ];
 
 export const tools = [
-  { name: "Git", icon: "" },
-  { name: "GitHub", icon: "" },
-  { name: "VS Code", icon: "" },
-  { name: "Google Colab", icon: "" },
-  { name: "AWS", icon: "" },
+  { name: "Git" },
+  { name: "GitHub" },
+  { name: "VS Code" },
+  { name: "Google Colab" },
+  { name: "AWS" },
 ];
 
 export const projects = [
@@ -73,8 +73,7 @@ export const projects = [
       "AI-powered student-alumni networking platform with real-time chat, job listings, and profile management. Integrated Gemini LLM for intelligent recommendations, achieving 40% increase in accurate matches and 50% boost in engagement.",
     image: "/images/campus-20connect.png",
     stack: ["Next.js", "React", "Firebase", "Tailwind"],
-    github: "#",
-    demo: "#",
+    demo: "https://capstone-project-next-js.vercel.app/auth/login",
   },
   {
     id: 2,
@@ -83,8 +82,7 @@ export const projects = [
       "Machine learning fraud detection system analyzing 500K+ insurance claims. Engineered decision tree and KNN algorithms, reducing fraudulent claims by 40% and improving predictive accuracy by 25%.",
     image: "/images/attachments-gen-images-public.jpg",
     stack: ["Python", "Machine Learning", "Data Analysis"],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/MUPPIDISRUJANKUMAR/AIML-Project-2-2",
   },
   {
     id: 3,
@@ -93,8 +91,8 @@ export const projects = [
       "Browser-based gaming portal featuring 3 interactive games (Rock Paper Scissors, Simon Game, Musical Drum Kit). Optimized JavaScript event handling improved performance by 40% with <100ms response time.",
     image: "/images/bt-20games.png",
     stack: ["HTML5", "CSS3", "JavaScript", "jQuery"],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/MUPPIDISRUJANKUMAR/BTGames",
+    demo: "https://bt-games.vercel.app/",
   },
   {
     id: 4,
@@ -103,8 +101,9 @@ export const projects = [
       "Modern, responsive startup landing page built with Next.js and TypeScript. Engineered reusable React components with AOS animations, achieving 90+ Google Lighthouse scores for performance and accessibility.",
     image: "/images/image.png",
     stack: ["Next.js", "React", "TypeScript", "Tailwind"],
-    github: "#",
-    demo: "#",
+    github:
+      "https://github.com/MUPPIDISRUJANKUMAR/StockTechDev---Startup-Landing-Page",
+    demo: "https://stock-tech-dev-startup-landing-page.vercel.app/",
   },
 ];
 

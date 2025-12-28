@@ -4,8 +4,9 @@ import { useState } from "react"
 import { skills, tools } from "@/lib/constants"
 import { cn } from "@/lib/utils"
 import { TooltipProvider } from "@/components/ui/tooltip"
-import { getTechIcon } from "./tech-icons"
+import { getTechIconPath } from "@/lib/icon-mapping"
 import { ChevronDown, ChevronUp } from "lucide-react"
+import Image from "next/image"
 
 export function Skills() {
   const [activeTab, setActiveTab] = useState<"skills" | "tools">("skills")
@@ -62,7 +63,7 @@ export function Skills() {
         <TooltipProvider>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
             {visibleSkills.map((item, i) => {
-              const Icon = getTechIcon(item.name)
+              const iconPath = getTechIconPath(item.name)
 
               return (
                 <div
@@ -71,9 +72,14 @@ export function Skills() {
                   style={{ animationDelay: `${i * 30}ms` }}
                 >
                   <div className="group relative flex flex-col items-center justify-center bg-background/50 backdrop-blur-sm border border-border/50 rounded-xl p-3 aspect-square w-full transition-all duration-300 hover:border-primary/50 hover:bg-muted/20 hover:-translate-y-1">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 mb-2 flex items-center justify-center">
-                      {Icon ? (
-                        <Icon className="w-full h-full object-contain" />
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 mb-2 flex items-center justify-center relative">
+                      {iconPath ? (
+                        <Image
+                          src={iconPath || "/placeholder.svg"}
+                          alt={item.name}
+                          fill
+                          className="object-contain"
+                        />
                       ) : (
                         <div className="w-full h-full bg-muted rounded flex items-center justify-center text-[10px] text-muted-foreground uppercase">
                           {item.name.substring(0, 2)}
@@ -114,3 +120,4 @@ export function Skills() {
     </section>
   )
 }
+

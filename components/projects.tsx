@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Github, ExternalLink } from "lucide-react"
 import { projects } from "@/lib/constants"
-import { getTechIcon } from "./tech-icons"
+import { getTechIconPath } from "@/lib/icon-mapping"
 
 export function Projects() {
   return (
@@ -39,14 +39,14 @@ export function Projects() {
                   </h3>
                   <div className="flex items-center gap-2 flex-wrap">
                     {project.stack.slice(0, 3).map((tech) => {
-                      const Icon = getTechIcon(tech)
-                      return Icon ? (
+                      const iconPath = getTechIconPath(tech)
+                      return iconPath ? (
                         <div
                           key={tech}
-                          className="flex items-center justify-center w-8 h-8 rounded-lg bg-muted/50 border border-border/50"
+                          className="flex items-center justify-center w-8 h-8 rounded-lg bg-muted/50 border border-border/50 relative p-1.5"
                           title={tech}
                         >
-                          <Icon />
+                          <Image src={iconPath} alt={tech} fill className="object-contain p-1.5" />
                         </div>
                       ) : null
                     })}
