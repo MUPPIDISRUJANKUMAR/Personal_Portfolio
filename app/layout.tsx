@@ -27,7 +27,7 @@ export default function RootLayout({
       <body
         className={`${_geist.className} ${_geistMono.className} font-sans antialiased`}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           {children}
           <Analytics />
         </ThemeProvider>
